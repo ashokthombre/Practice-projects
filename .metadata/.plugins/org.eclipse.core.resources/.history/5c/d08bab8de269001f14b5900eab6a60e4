@@ -1,0 +1,30 @@
+package productcrudapp.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import productcrudapp.dao.ProductDao;
+import productcrudapp.model.Product;
+
+@Controller
+public class MainController {
+	
+	
+	@RequestMapping("/")
+	public String home() {
+	
+		System.out.println("Home");
+		return "index";
+	}
+	
+	
+	@RequestMapping("/add-product")
+	public String addProduct(Model model)
+	{
+		model.addAttribute("title","Add Product");
+		
+		return "add_product_form";		
+	}
+}

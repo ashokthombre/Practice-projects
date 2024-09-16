@@ -1,0 +1,11 @@
+INDEX VERSION 1.134
+C:\Users\Admin\Desktop\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1354900507.index
+\productcrudapp\src\main\resources
+C:\Users\Admin\Desktop\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4234883805.index
+\spring\src\main\resources
+C:\Users\Admin\Desktop\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1446278970.index
+\springmvc\src\main\java
+C:\Users\Admin\Desktop\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1878311279.index
+\productcrudapp\src\main\java
+C:\Users\Admin\Desktop\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1128763465.index
+\springbootproject\src\main\java

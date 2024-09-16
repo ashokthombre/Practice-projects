@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <bean class="com.springcore.School" name="school" p:id="5" p:name="YCMS" ></bean>
+
+    <bean class="com.springcore.Student" name="student1" p:studentId="1234" p:studentName="Ashoka" p:studentAddress="Mumbai" p:name="Ashoka" p:school-ref="school" >
+    </bean>
+
+
+
+    <bean class="com.springcore.Samosa" name="samosa" init-method="init" destroy-method="destroy">
+        <property name="price" value="10"/>
+
+    </bean>
+    <bean class="com.springcore.Pepsi" name="pepsi" p:price="14"></bean>
+
+
+    <bean class="com.springcore.Address" name="address"  >
+        <property name="street" value="Temp Street"/>
+        <property name="city" value="Pune"/>
+
+    </bean>
+    <bean class="com.springcore.Address" name="address1"  >
+        <property name="street" value="Temp Street1"/>
+        <property name="city" value="Pune1"/>
+
+    </bean>
+
+    <bean class="com.springcore.Employee" name="emp" >
+
+    </bean>
+    <bean class="com.springcore.Teacher" name="teacher" scope="prototype">
+        <property name="name" value="Ashoka"/>
+        <property name="city" value="Pune"/>
+
+    </bean>
+
+<!--    <bean class="com.springcore.Person" name="person">-->
+<!--        <property name="personName" value="Ashoka"/>-->
+<!--        <property name="personCity" value="Mumbai"/>-->
+<!--    </bean>-->
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.springcore"/>
+
+
+</beans>
