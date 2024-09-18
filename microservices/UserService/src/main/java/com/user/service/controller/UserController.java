@@ -48,6 +48,7 @@ public class UserController {
 
         System.out.println("Fallback is executed because service is down "+e.getMessage());
 
+        e.printStackTrace();
         User user = User.builder().email("dummy@gmail.com")
                 .name("Dummy")
                 .about("This user is created dummy because some service is down")

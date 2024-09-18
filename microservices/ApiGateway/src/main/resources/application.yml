@@ -13,7 +13,7 @@ eureka:
 spring:
   cloud:
     gateway:
-      mvc:
+      #mvc:
         routes:
         # Route for user-service
         - id: USERSERVICE
@@ -32,4 +32,17 @@ spring:
           predicates:
             - Path=/ratings/**           # Matches any path under /users/*
           filters:
-            - AddRequestHeader=Custom-Header,CustomValue
+            - AddRequestHeader=Custom-Header,CustomVa
+
+#okta configuration for api gateway
+okta:
+  oauth2:
+    issuer: https://dev-68535878.okta.com/oauth2/default
+    audience: api://default
+    client-id: 0oajqyt7db7OPjzFU5d7
+    client-secret: 0tU0SO8LBvP8cmCyq5py4LkXMWH5RAfRZhbfqAQPZlIjnpK_YZcQnUMLvrfplxTS
+    scopes:
+      - openid
+      - profile
+      - email
+      - offline_access
