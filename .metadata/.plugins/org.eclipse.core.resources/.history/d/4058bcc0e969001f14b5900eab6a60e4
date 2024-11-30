@@ -1,7 +1,0 @@
-package com.aop.services;
-
-public class PaymentService {
-	
-	public void makePayment();
-
-}

@@ -26,10 +26,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.deploy.manual.javaapp"/>
 		</list>
 		<list key="groupId">
+			<item value="com.deploy.manual"/>
 		</list>
 		<list key="artifactId">
+			<item value="javaapp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
